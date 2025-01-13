@@ -1,7 +1,7 @@
 # c23-90-Webapp
 # AMANI - Volunteering Platform
 
-ANAMI is a web application designed to connect volunteers with meaningful opportunities around them. Built using React, the platform provides an engaging and seamless user experience for individuals who want to contribute to social causes.
+AMANI is a web application designed to connect volunteers with meaningful opportunities around them. Built using React, the platform provides an engaging and seamless user experience for individuals who want to contribute to social causes.
 
 ## Features
 
