@@ -55,6 +55,7 @@
 .socialLinks {
     display: flex;
     background-color: aqua;
+    color: black !important;
     justify-content: space-around;
     margin-top: 15px;
 }
