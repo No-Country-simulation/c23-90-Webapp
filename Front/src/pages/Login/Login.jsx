@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 import Swal from 'sweetalert2';
 import './Login.css'; 
+import { validateEmail, validatePassword } from './Validations'; 
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -10,7 +11,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Validaciones
+    
     if (!validateEmail(email)) {
       Swal.fire({
         icon: 'error',
@@ -36,17 +37,6 @@ const Login = () => {
       text: 'You are now logged in.',
     });
 
-  
-  };
-
-  const validateEmail = (email) => {
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return emailRegex.test(email);
-  };
-
-  const validatePassword = (password) => {
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{1,10}$/;
-    return passwordRegex.test(password);
   };
 
   return (
