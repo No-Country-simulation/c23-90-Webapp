@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    
+    // Validación de correo
     if (!validateEmail(email)) {
       Swal.fire({
         icon: 'error',
@@ -21,11 +21,12 @@ const Login = () => {
       return;
     }
 
+    // Validación de contraseña
     if (!validatePassword(password)) {
       Swal.fire({
         icon: 'error',
         title: 'Invalid Password',
-        text: 'Password must contain uppercase, lowercase, special characters, numbers, and be at most 10 characters long.',
+        text: 'Password must contain at least one uppercase letter, one lowercase letter, one special character, one number, and be at most 10 characters long.',
       });
       return;
     }
@@ -36,7 +37,6 @@ const Login = () => {
       title: 'Logged in successfully',
       text: 'You are now logged in.',
     });
-
   };
 
   return (
@@ -96,3 +96,4 @@ const Login = () => {
 };
 
 export default Login;
+
