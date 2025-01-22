@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Validación de correo
+    // Validación email
     if (!validateEmail(email)) {
       Swal.fire({
         icon: 'error',
@@ -21,7 +21,7 @@ const Login = () => {
       return;
     }
 
-    // Validación de contraseña
+    // Validación de password
     if (!validatePassword(password)) {
       Swal.fire({
         icon: 'error',
