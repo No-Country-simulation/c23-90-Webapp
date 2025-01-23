@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Guest Houses",
+        "imgUrl" : "/guests-house.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Hostels",
+        "imgUrl" : "/hostels.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Camping Sites",
+        "imgUrl" : "camping-sites.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Farm",
+        "imgUrl" : "/farm.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Eco Villages",
+        "imgUrl" : "/eco-village.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Sustainable Communities",
+        "imgUrl" : "/sustainable-communities.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Holistic Centers",
+        "imgUrl" : "/holistic-center.jpg"
+    }
+]

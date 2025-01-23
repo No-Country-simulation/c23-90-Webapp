@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navBar">
-      <Link to="/"><img src='/logo.jpeg' alt="Logo" className="logo"/></Link>
+      <Link to="/"><img src='/logo.webp' alt="Logo" className="logo"/></Link>
       <ul>
         <li><Link to="/about">About Us</Link></li>
         <li><Link to="/join">How to Join</Link></li>
@@ -14,10 +14,10 @@ const Navbar = () => {
         <li><Link to="/contact">Contact Us</Link></li>
       </ul>
       <div>
-        <Link to="/sign" type="button" class="btn btn-primary">
+        <Link to="/sign" type="button" class="btn signUp">
           SIGN UP FREE
         </Link>
-        <Link to="/login" type="button" class="btn btn-primary">
+        <Link to="/login" type="button" class="btn login">
           <i class="bi bi-person-fill"></i>
           LOGIN
         </Link>
