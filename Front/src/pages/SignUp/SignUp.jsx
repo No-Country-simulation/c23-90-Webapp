@@ -133,7 +133,7 @@ const SignUp = () => {
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="firstName">Name</label>
-          <input
+          <input className='inputText'
             type="text"
             id="firstName"
             name="firstName"
@@ -142,7 +142,7 @@ const SignUp = () => {
             onChange={handleChange}
             required
           />
-          <input
+          <input className='inputText'
             type="text"
             id="lastName"
             name="lastName"

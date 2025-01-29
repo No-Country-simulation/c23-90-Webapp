@@ -1,0 +1,111 @@
+.cards {
+    background-color: #93DEED;
+    padding: 5% 10%;
+}
+
+.titleContact {
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.contactCards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardContact {
+    background-color: #D0F1F7;
+    text-align: center;
+    border-radius: 25px;
+    width: 25%;
+    padding: 50px;
+}
+
+.cardContactImg {
+    width: 150px;
+}
+
+.cardContactTitle {
+    font-size: 30px;
+    color: black;
+    margin: 20px 0;
+}
+
+.cardContactParagraph {
+    color: #3C5C6B;
+    font-size: 20px;
+    font-weight: 600;
+    height: 80px;
+}
+
+.cardContactBtn {
+    width: 45%;
+    background-color: #2596BE;
+    color: #FFFFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.case {
+    display: flex;
+    flex-flow: wrap  column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.titleCase {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.paragraphCase {
+    color: #3C5C6B;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.formCase {
+    position: relative;
+    flex-flow: wrap column;
+    margin: auto;
+    width: 25%;
+}
+
+.inputCase {
+    height: 100px;
+    width: 100%;
+    border: 2px solid #0C646C;
+    color: #3C5C6B;
+    opacity: .6;
+    border-radius: 25px;
+    margin: 20px 0;  
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.inputCase::placeholder {
+    position: absolute;
+    top: 10px;
+    color: #3C5C6B;
+    opacity: .6;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.buttonCaseForm { 
+    background-color: #2596BE;
+    font-weight: 700;
+    font-size: 30px;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+
+.buttonCaseForm:hover {
+    background-color: #0C646C;
+}

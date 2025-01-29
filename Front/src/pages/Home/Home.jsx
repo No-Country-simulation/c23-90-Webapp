@@ -11,7 +11,7 @@ const Home = () => {
         <p>Explore 1,800+ proyects abroad & find your best volunteer program</p>
         <div className="search">
           <i class="bi bi-search"></i>
-          <input type="text" name="searcher" id="searcher" placeholder="Search" />
+          <input type="text" name="searcher" id="searcher" placeholder="Search" className="homeInput"/>
         </div>
         <ul className="buttons">
           <li>
