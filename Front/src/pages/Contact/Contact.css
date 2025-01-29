@@ -50,6 +50,10 @@
     border-radius: 50px;
 }
 
+.cardContactBtn:hover {
+    background-color: #0C646C;
+}
+
 .case {
     display: flex;
     flex-flow: wrap  column;
