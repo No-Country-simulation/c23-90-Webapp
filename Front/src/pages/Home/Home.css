@@ -123,9 +123,10 @@ p {
 .description h5{
   color: black;
   font-size: 30px;
+  color: #0B3C4D;
 }
 
-.footer {
+.enjoy {
   text-align: center;
   font-size: 1.6rem;
   font-weight: bold;

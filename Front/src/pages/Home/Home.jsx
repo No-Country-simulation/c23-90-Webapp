@@ -41,6 +41,7 @@ const Home = () => {
         </section>
 
         <section className="whySection">
+          <hr />
           <h2 className="subtitle">Why book with Amani</h2>
           <p className="paragraph">Amani is the world's leading platform for comparing international volunteer opportunities.
             We guide you through a safe and simple application process, including all necessary payments.
@@ -76,8 +77,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <h5 className="footer">Enjoy our services for dedicated volunteers!</h5>
+          <h5 className="enjoy">Enjoy our services for dedicated volunteers!</h5>
           <p className="paragraph">All Program feeds are charged directly by your volunteer organization.</p>
+          <hr />
         </section>
 
       </main>
