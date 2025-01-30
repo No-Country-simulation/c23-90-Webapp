@@ -1,0 +1,113 @@
+.bodycosts {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg,#7d9afd, #01f3ff );
+  margin: 0;
+  padding: 0;
+}
+
+.costs-container {
+  text-align: center;
+  padding: 2rem;
+ 
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cardcosts {
+  border-radius: 25px 10px 25px 10px;
+  padding: 1.5rem;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cardcosts h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.cardcosts p {
+  margin: 0.5rem 0;
+  background-color: white; 
+  color: black; 
+  padding: 0.5rem; 
+  border-radius: 5px; 
+  font-size: 0.85rem; 
+}
+
+.cardcosts .price {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.cardcosts button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+}
+
+.free-plan {
+  background-color: #b3e6b3;
+}
+
+.free-plan h3 {
+  background-color: #66cc66; 
+}
+
+.free-plan button {
+  background-color: #66cc66; 
+}
+
+.standard-plan {
+  background-color: #fff2b3;
+}
+
+.standard-plan h3 {
+  background-color: #ffcc00; 
+}
+
+.standard-plan button {
+  background-color: #ffcc00; 
+}
+
+.premium-plan {
+  background-color: #ffcc99; 
+}
+
+.premium-plan h3 {
+  background-color: #ff6600;
+}
+
+.premium-plan button {
+  background-color: #ff6600; 
+}
+
+.info-card {
+  background-color: #377880; 
+  color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-card h3 {
+  margin-bottom: 1rem;
+}
+
+.info-card p {
+  font-size: 1.1rem;
+}
