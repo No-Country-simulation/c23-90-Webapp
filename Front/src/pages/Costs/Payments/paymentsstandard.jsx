@@ -15,23 +15,17 @@ const Paymentsstandard = () => {
     setPaymentMethod(method);
   };
 
- 
   const detectCardType = (cardNumber) => {
     const visaPattern = /^4/;
-    const mastercardPattern = /^5[1-5]/;
+    const mastercardPattern = /^5[1-5][0-9]{14}$/;
 
-   
     if (visaPattern.test(cardNumber)) {
       setCardType('Visa');
-      setCardLogo('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Visa_Inc._logo.svg/120px-Visa_Inc._logo.svg.png');
-    }
-   
-    else if (mastercardPattern.test(cardNumber)) {
+      setCardLogo('/assets/visa-logo.png');
+    } else if (mastercardPattern.test(cardNumber)) {
       setCardType('MasterCard');
-      setCardLogo('https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/MasterCard_Logo.svg/1024px-MasterCard_Logo.svg.png');
-    } 
-    
-    else {
+      setCardLogo('/assets/mastercard-logo.png');
+    } else {
       setCardType('');
       setCardLogo('');
     }
@@ -43,117 +37,66 @@ const Paymentsstandard = () => {
 
   return (
     <div className="payment-container">
-     
-      <div className="right-section">
-        <h2>Resume Subscription</h2>
-        <div className="plan-selection">
-          <h3>Select Payment Option</h3>
-          <div className="payment-options">
-            <button
-              className={`payment-button ${plan === 'monthly' ? 'selected' : ''}`}
-              onClick={() => handlePlanChange('monthly')}
-            >
-              $10/month
-            </button>
-            <button
-              className={`payment-button ${plan === 'yearly' ? 'selected' : ''}`}
-              onClick={() => handlePlanChange('yearly')}
-            >
-              $100/year
-            </button>
-          </div>
-          <div className="payment-summary">
-            <p>Plan: Standard Plan</p>
-            <p>Subtotal: ${plan === 'monthly' ? '10' : '100'}</p>
-            <p>Total: ${plan === 'monthly' ? '10' : '100'}</p>
-          </div>
-        </div>
-
-        <div className="payment-method-selection">
-          <h3>Select Payment Method</h3>
-          <div className="payment-methods">
-            <button
-              className={`method-button ${paymentMethod === 'card' ? 'selected' : ''}`}
-              onClick={() => handlePaymentMethodChange('card')}
-            >
-              Pay with Card
-            </button>
-            <button
-              className={`method-button ${paymentMethod === 'paypal' ? 'selected' : ''}`}
-              onClick={() => handlePaymentMethodChange('paypal')}
-            >
-              Pay with PayPal
-            </button>
-          </div>
-        </div>
-      </div>
-
-      
       <div className="left-section">
-        <h3>Enter Your Payment Information</h3>
-        <p>Logged in as: correo@dominio.com</p>
-
-        {paymentMethod === 'card' ? (
+        <h3>Enter your payment information</h3>
+        <p className="logged-in-text"><strong>Logged in as:</strong> <span className="user-email">mail@dominio.com</span> <span className="change-option">Change</span></p>
+        <h4>Your Payment Method</h4>
+        <div className="payment-logos">
+          <img src="/assets/visa-logo.png" alt="Visa" className="visible-logo" />
+          <img src="/assets/mastercard-logo.png" alt="MasterCard" className="visible-logo" />
+          <img src="/assets/paypal pago.png" alt="PayPal" className="visible-logo" />
+        </div>
+        <div className="payment-buttons payment-logos">
+          <button onClick={() => handlePaymentMethodChange('card')} className="dark-gray">Debit/Credit</button>
+          <button onClick={handlePayPalRedirect} className="paypal-button">
+            <img src="/assets/paypal pago.png" alt="PayPal" /> 
+          </button>
+        </div>
+        {paymentMethod === 'card' && (
           <form className="payment-form">
-            <div className="form-group">
-              <label>Card Number</label>
-              <input
-                type="text"
-                placeholder="**** **** **** ****"
-                onChange={(e) => detectCardType(e.target.value)}
-              />
-            </div>
-            
-            {cardLogo && (
-              <div className="card-logo-container">
-                <img src={cardLogo} alt={cardType} className="card-logo" />
-              </div>
-            )}
-            <div className="form-group">
-              <label>MM/YY</label>
+            <div className="card-inputs">
+              <input type="text" placeholder="Card Number" onChange={(e) => detectCardType(e.target.value)} />
               <input type="text" placeholder="MM/YY" />
+              <input type="text" placeholder="CVV" />
             </div>
-            <div className="form-group">
-              <label>CVV</label>
-              <input type="text" placeholder="***" />
-            </div>
-            <div className="form-group">
-              <label>First Name</label>
-              <input type="text" placeholder="First Name" />
-            </div>
-            <div className="form-group">
-              <label>Last Name</label>
-              <input type="text" placeholder="Last Name" />
-            </div>
-            <div className="form-group">
-              <label>Postal Code</label>
+            {cardLogo && <img src={cardLogo} alt={cardType} className="card-logo" />}
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <div className="address-inputs">
               <input type="text" placeholder="Postal Code" />
-            </div>
-            <div className="form-group">
-              <label>Country/Region</label>
               <select>
-                <option>USA</option>
-                <option>Canada</option>
-                <option>Colombia</option>
                 <option>Argentina</option>
-                
+                <option>Colombia</option>
+                <option>Mexico</option>
+                <option>United States</option>
+                <option>Spain</option>
+                <option>India</option>
+                <option>France</option>
+                <option>Belgium</option>
+                <option>Italy</option>
+                <option>Germany</option>
               </select>
             </div>
-            <button type="submit">Access and Subscribe</button>
+            <p className="subscription-text">{
+              plan === 'monthly' 
+                ? 'By clicking "Access and Subscribe," you agree that: you will be charged $10.00 USD per month. Your subscription will automatically renew each month until you cancel (price is subject to change). You can cancel at any time through Customer Support. If you cancel before February 4, 2025, you will receive a full refund and avoid any potential charges. You also agree to the Terms of Use and the Subscription and Cancellation Terms.'
+                : 'By clicking "Access and Subscribe," you agree that: you will be charged $100.00 USD per year. Your subscription will automatically renew each year until you cancel (price is subject to change). You can cancel at any time through Customer Support. If you cancel before February 4, 2025, you will receive a full refund. You also agree to the Terms of Use and the Subscription and Cancellation Terms.'
+            }</p>
+            <button className="subscribe-button">ACCESS AND SUBSCRIBE</button>
           </form>
-        ) : (
-          <div className="paypal-info">
-            <p>Please complete your payment via PayPal.</p>
-            <button onClick={handlePayPalRedirect} className="paypal-button">
-              <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal Logo" className="paypal-logo" />
-              Pay with PayPal
-            </button>
-          </div>
         )}
-
-        <p className="payment-disclaimer">
-          By clicking "Access and Subscribe," you agree that: you will be charged ${plan === 'monthly' ? '10.00' : '100.00'} USD {plan === 'monthly' ? 'per month' : 'per year'}. Your subscription will automatically renew each {plan === 'monthly' ? 'month' : 'year'} until you cancel (price is subject to change). You can cancel at any time through Customer Support. If you cancel before February 4, 2025, you will receive a full refund and avoid any potential charges. You also agree to the Terms of Use and the Subscription and Cancellation Terms.
-        </p>
+      </div>
+      <div className="right-section light-blue-background">
+        <h2>Resume</h2>
+        <h3>Subscription</h3>
+        <div className="plan-toggle">
+          <button className={plan === 'monthly' ? 'selected darker-yellow' : 'yellow'} onClick={() => handlePlanChange('monthly')}>Month</button>
+          <button className={plan === 'yearly' ? 'selected darker-yellow' : 'yellow'} onClick={() => handlePlanChange('yearly')}>Year</button>
+        </div>
+        <button className="paymentstandard-plan">Standard Plan</button>
+        <p>{plan === 'monthly' ? '$10/month for standard plan' : '$100/year for standard plan'}</p>
+        <p>Subtotal: ${plan === 'monthly' ? '10' : '100'}</p>
+        <p>Total: ${plan === 'monthly' ? '10' : '100'}</p>
       </div>
     </div>
   );

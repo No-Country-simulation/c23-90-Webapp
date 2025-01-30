@@ -94,9 +94,9 @@ const Costs = () => {
       </div>
 
       {/* Choosing the Right Plan */}
-      <div className="info-card">
-        <h3>Choosing the Right Plan</h3>
-        <p>No matter your level of involvement, Amani has a plan to match your needs. Upgrade or downgrade anytime as your journey evolves. Let's make a difference together!</p>
+      <div className="info-cardcost">
+        <h5>Choosing the Right Plan</h5>
+        <h5>No matter your level of involvement, Amani has a plan to match your needs. Upgrade or downgrade anytime as your journey evolves. Let's make a difference together!</h5>
       </div>
     </div>
   );

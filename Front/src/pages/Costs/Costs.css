@@ -94,12 +94,12 @@
   background-color: #ff6600; 
 }
 
-.info-card {
+.info-cardcost {
   background-color: #377880; 
   color: white;
-  border-radius: 10px;
+  border-radius: 25px;
   padding: 1.5rem;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
