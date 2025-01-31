@@ -44,6 +44,11 @@
     width: 300px;
 }
 
+.logoFooter:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
+
 .logoText{
     color: #FFFFFF;
     font-size: 20px;
@@ -116,4 +121,16 @@
     border: none;
     border-radius: 15px;
     cursor: pointer;
+}
+
+.tags > li > button:hover { 
+    color: #FFFFFF;
+    background-color: #0ACCF3;
+    scale: 1.1;
+    transition: .2s;
+}
+
+.iconFooter:hover { 
+    color: #0ACCF3;
+    transition: .2s;
 }

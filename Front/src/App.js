@@ -6,6 +6,7 @@ import About from "./pages/About/About";
 import Navbar from "./components/Navbar/Navbar"; 
 import SignUp from "./pages/SignUp/SignUp";
 import Footer from "./components/Footer/Footer";
+import Contact from "./pages/Contact/Contact";
 import BenefitsOfJoining from "./pages/BenefitsOfJoining/BenefitsOfJoining";
 import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 import HowToJoin from "./pages/HowToJoin/HowToJoin";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
         <Route path="/sign" element={<SignUp />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/benefits" element={<BenefitsOfJoining />} />
         <Route path="/join" element={<HowToJoin />} />
         <Route path="/costs" element={<Costs />} />

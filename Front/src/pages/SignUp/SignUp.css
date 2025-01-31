@@ -34,7 +34,7 @@
     font-size: 0.9rem;
   }
   
-  input[type="text"],
+  .inputText,
   input[type="email"],
   input[type="password"],
   input[type="date"],

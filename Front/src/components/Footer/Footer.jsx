@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
         <section className='sectionFooter'>
-            <img src="/logo.webp" alt="Amani Logo" className='titleFooter logoFooter'/>
+            <a href='/'><img src="/logo.webp" alt="Amani Logo" className='titleFooter logoFooter'/></a>
             <p className='logoText'>© 2022 Amani. All rights reserved.</p>
             <p className='logoText'><Link href="/terms" className='logoText'>Terms of Service</Link> . <Link href="/policy" className='logoText'>Privacy Policy</Link></p>
         </section>
@@ -44,10 +44,10 @@ const Footer = () => {
                 Social
             </h5>
             <ul className='vertical'>
-                <li><a href="https://www.x.com"><i class="bi bi-twitter-x"></i></a></li>
-                <li><a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="https://www.youtube.com"><i class="bi bi-youtube"></i></a></li>
+                <li><a href="https://www.x.com"><i class="bi bi-twitter-x iconFooter"></i></a></li>
+                <li><a href="https://www.facebook.com"><i class="bi bi-facebook iconFooter"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="bi bi-instagram iconFooter"></i></a></li>
+                <li><a href="https://www.youtube.com"><i class="bi bi-youtube iconFooter"></i></a></li>
             </ul>
         </section>
         <section className='sectionFooter'>
