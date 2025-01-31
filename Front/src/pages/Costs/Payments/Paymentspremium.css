@@ -8,8 +8,19 @@
   width: 100%;
   margin: 10px 0;
 }
+
+.planpremium-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
 .planpremium-toggle button {
   background-color: #ffcc99;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 48%;
 }
 
 .planpremium-toggle button.selected {

@@ -59,6 +59,7 @@
     flex-flow: wrap  column;
     justify-content: space-between;
     text-align: center;
+    background-color: #3C5C6B;
 }
 
 .titleCase {

@@ -72,6 +72,7 @@ h3, h4 {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin: 0 5px 5px 0 ;
 }
 
 .address-inputs {
@@ -179,4 +180,12 @@ h3, h4 {
 
 .plan-toggle button.selected {
   background-color: #ffcc00;
+}
+
+.subscribe-button {
+  width: 50%;
+}
+
+.card-logo {
+  width: 100px;
 }

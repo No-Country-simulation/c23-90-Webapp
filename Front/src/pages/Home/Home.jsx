@@ -7,8 +7,8 @@ const Home = () => {
     <>
       <video src="https://videos.pexels.com/video-files/3209571/3209571-uhd_2560_1440_25fps.mp4" autoplay="true" muted="true" loop="true"></video>
       <header className="header">
-        <h1>EASY VOLUNTEERING ABROAD</h1>
-        <p>Explore 1,800+ proyects abroad & find your best volunteer program</p>
+        <h1 className="homeTitle">EASY VOLUNTEERING ABROAD</h1>
+        <p className="homeParagraph">Explore 1,800+ proyects abroad & find your best volunteer program</p>
         <div className="search">
           <i class="bi bi-search"></i>
           <input type="text" name="searcher" id="searcher" placeholder="Search" className="homeInput"/>

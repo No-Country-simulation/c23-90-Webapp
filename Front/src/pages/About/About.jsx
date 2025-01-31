@@ -1,5 +1,5 @@
 import { Card, Col, Row } from 'react-bootstrap';
-import styles from './About.css';
+import './About.css';
 import CardTeam from './CardTeam/CardTeam';
 
 function About() {
@@ -34,7 +34,7 @@ function About() {
       image: 'https://ca.slack-edge.com/T02KS88FB0E-U079FF3DH8C-g6ea6d2ee80d-512',
       description: 'Software QA Engineer at AMANI',
       linkedin: 'https://www.linkedin.com/in/alejandro-reyes-software-qa-engineer/',
-      github: '',
+      github: 'https://github.com/Alejandrrooo',
     },
     {
       id: 5,
@@ -42,20 +42,20 @@ function About() {
       image: 'https://media.licdn.com/dms/image/v2/C4D03AQGEpJ1WF9ALQw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1618757947979?e=1743638400&v=beta&t=zU7xn3278mNc3EnHYOW5u92FyAhmF1xM6re7gu7upic',
       description: 'Backend at AMANI',
       linkedin: 'https://www.linkedin.com/in/diego-guzman-cerveux/',
-      github: '',
+      github: 'https://github.com/cerveux-learning',
     },
   ];
 
   return (
-    <div className={styles.aboutContainer}>
-      <Card className={styles.companyCard}>
+    <div className="aboutContainer">
+      <Card className="companyCard">
         <Row className="g-0">
           <Col md={8} className="mx-auto">
-            <Card.Body className={styles.textContainer}>
-              <Card.Title className={styles.text}>
+            <Card.Body className="textContainer">
+              <Card.Title className="text">
                 ¡AMANI: PEACE IN ACTION, UNITY IN MOTION!
               </Card.Title>
-              <Card.Text className={styles.text}>
+              <Card.Text className="text">
                 Join AMANI and make a real impact! Discover volunteer opportunities that connect you to sustainable communities, eco-friendly projects, and life-changing experiences. Together, we create peace and unity through action. Start your journey today and be the change the world needs! As junior developers, we came together with the goal of creating more than just a website. We wanted to build a purposeful platform that would connect individuals eager to do good with projects in need of support. Thus, AMANI was born, a name that means "peace" in Swahili, reflecting our vision to create a positive impact in the world. What began as a small dream quickly evolved into a project with a profound social purpose. We decided to use React to build the frontend, aiming for a simple yet attractive interface that would allow users to explore volunteering opportunities based on their interests and location. We incorporated features such as country filters and the creation of secure volunteer profiles, making AMANI not only functional but also user-friendly. Each informational section, from "How to Join" to "Benefits," was designed to be clear and direct, ensuring the platform’s purpose was always at the forefront. AMANI became more than just an ecommerce platform—it evolved into a real connection tool. For us as developers, it’s been more than just a technical project; it’s been the opportunity to create something with a tangible impact on the world. AMANI is in its early stages and growing, initially part of the No Country project but with a much greater purpose.
               </Card.Text>
             </Card.Body>
@@ -63,10 +63,10 @@ function About() {
         </Row>
       </Card>
 
-      <p className={styles.teamTitle}>Meet Our Team</p>
-      <div className={styles.cardSection}>
+      <p className="teamTitle">Meet Our Develop Team</p>
+      <div className="cardSection">
         {teamMembers.map((member) => (
-          <div key={member.id} className={styles.cardContainer}>
+          <div key={member.id} className="cardContainer">
             <CardTeam {...member} />
           </div>
         ))}

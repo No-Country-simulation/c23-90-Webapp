@@ -18,7 +18,7 @@ const Paymentspremium = () => {
 
   const detectCardType = (cardNumber) => {
     const visaPattern = /^4/;
-    const mastercardPattern = /^5[1-5][0-9]{14}$/;
+    const mastercardPattern = /^5/;
 
     if (visaPattern.test(cardNumber)) {
       setCardType('Visa');
@@ -61,8 +61,10 @@ const Paymentspremium = () => {
               <input type="text" placeholder="CVV" />
             </div>
             {cardLogo && <img src={cardLogo} alt={cardType} className="card-logo" />}
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+            <div className="card-inputs">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </div>
             <div className="address-inputs">
               <input type="text" placeholder="Postal Code" />
               <select>
