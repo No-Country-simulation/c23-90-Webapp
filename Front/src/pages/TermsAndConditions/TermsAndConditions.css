@@ -1,0 +1,49 @@
+.terms-and-conditions {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #e4e2e2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.terms-and-conditions .terms-title {
+  text-align: center;
+  font-size: 58px; 
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.terms-and-conditions h2 {
+  color: #333;
+  font-size: 32px;
+}
+
+.terms-and-conditions p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.terms-and-conditions a {
+  color: #0531ab;
+  font-size: 32px;
+}
+
+.terms-and-conditions .back-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #3899c5;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.terms-and-conditions .back-button:hover {
+  background: #0056b3;
+}

@@ -6,6 +6,7 @@ import About from "./pages/About/About";
 import Navbar from "./components/Navbar/Navbar"; 
 import SignUp from "./pages/SignUp/SignUp";
 import Footer from "./components/Footer/Footer";
+import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 import HowToJoin from "./pages/HowToJoin/HowToJoin";
 import Costs from "./pages/Costs/Costs"; 
 import Paymentspremium from "./pages/Costs/Payments/Paymentspremium";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/costs" element={<Costs />} />
         <Route path="/paymentsstandard" element={<Paymentsstandard />} />
         <Route path="/paymentspremium" element={<Paymentspremium />} />
+        <Route path="/terms" element={<TermsAndConditions />} />
       </Routes>
       <Footer />
     </Router>
