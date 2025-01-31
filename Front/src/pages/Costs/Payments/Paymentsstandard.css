@@ -1,0 +1,182 @@
+.payment-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7bd9ea;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.left-section {
+  width: 55%;
+  padding: 20px;
+}
+
+.right-section {
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3, h4 {
+  color: #000;
+}
+
+.user-email {
+  color: gray;
+}
+
+.change-option {
+  color: blue;
+  cursor: pointer;
+}
+
+.payment-logos img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.payment-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.payment-buttons button {
+  background-color: white;
+  border: 1px solid #282525;
+  padding: 10px 20px;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.paypal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paypal-button img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.cardpayment-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-inputs input {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.address-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.address-inputs input,
+.address-inputs select {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subscribepayment-button {
+  background-color: #0288D1;
+  color: rgb(15, 9, 9);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.plan-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.plan-toggle button {
+  padding: 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  width: 48%;
+}
+
+.plan-toggle button.selected {
+  background-color: #01579B;
+  color: white;
+}
+
+.paymentstandard-plan {
+  background-color:  #ffcc00;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.right-section p {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.cardpayment-logo {
+  width: 60px;
+  margin: 10px 0;
+}
+
+.logged-in-text {
+  color: black;
+  font-size: 14px;
+}
+
+.user-email {
+  font-size: 14px;
+}
+
+.change-option {
+  font-size: 8px;
+}
+
+.payment-logos img {
+  width: 50px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.payment-buttons button {
+  color: black;
+}
+
+.paypal-button img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.subscription-text {
+  color: black;
+  font-size: 12px;
+}
+
+.plan-toggle button {
+  background-color: #fae789;
+}
+
+.plan-toggle button.selected {
+  background-color: #ffcc00;
+}
