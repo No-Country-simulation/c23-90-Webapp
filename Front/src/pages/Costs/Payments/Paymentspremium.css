@@ -1,0 +1,22 @@
+.paymentspremium-plan {
+  background-color:  #ff6600;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px 0;
+}
+.planpremium-toggle button {
+  background-color: #ffcc99;
+}
+
+.planpremium-toggle button.selected {
+  background-color: #ff6600;
+}
+
+.subscription-text {
+  color: black;
+  font-size: 12px;
+}
