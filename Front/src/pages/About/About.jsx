@@ -7,7 +7,7 @@ function About() {
     {
       id: 1,
       name: 'Maria Angelica Palomino Jaramillo',
-      image: '/Marian.jpg',
+      image: '/Marian.JPG',
       description: 'Full Stack Developer at AMANI',
       linkedin: 'https://www.linkedin.com/in/mangelicapj/',
       github: 'https://github.com/mangelicapj',
