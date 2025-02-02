@@ -3,15 +3,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20vh 0;
+  padding: 14vh 0;
 }
 
 video {
   position: absolute;
   left: 0;
   top: 0;
-  height: 90%;
+  height: 70%;
   width: 100%;
+  object-fit: cover;
   z-index: -1;
   opacity: 0.98;
 }
@@ -135,3 +136,106 @@ video {
   font-size: 1.6rem;
   font-weight: bold;
 }
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+
+  video {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .header {
+    padding: 15vh 0;
+  }
+
+  .homeTitle {
+    font-size: 4rem;
+  }
+
+  .homeParagraph {
+    font-size: 1.45rem;
+  }
+
+  .buttons {
+    display: flex;
+    margin-left: 18%;
+  }
+
+  .buttons li{
+    width: 145px;
+  }
+
+  .subtitle {
+    padding: 20px 0;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .layout {
+    width: 76vw;
+  }
+
+  .description p {
+    font-size: 1.01rem;
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+  .homeTitle {
+    font-size: 4rem;
+  }
+
+  .homeParagraph {
+    font-size: 1.5rem;
+  }
+
+  .search {
+    width: 65%;
+  }
+
+  .buttons {
+    margin-left: 20%;
+  }
+
+  .buttons li{
+    width: 200px;
+  }
+
+  .btnHome{
+    font-size: .7rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    padding: 10px 0;
+  }
+
+  .paragraph {
+    font-size: .9rem;
+  }
+
+  .accessIcon {
+    width: 5rem;
+    height: 5rem;
+    margin: 5px;
+  }
+
+  .description p {
+    font-size: 0.8125rem;
+  }
+
+  .description h5 {
+    color: black;
+    font-size: .99rem;
+    color: #0B3C4D;
+}
+
+
+}
+

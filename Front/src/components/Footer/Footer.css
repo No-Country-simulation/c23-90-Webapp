@@ -54,6 +54,11 @@
     font-size: 20px;
     font-weight: 400;
     align-self: start;
+    text-decoration: none;
+}
+
+.logoText > a:hover{
+    text-decoration: underline;
 }
 
 .tags {
@@ -106,7 +111,13 @@
 .vertical > li > a {
     color: #FFFFFF;
     font-weight: 500;
+    text-decoration: none;
 }
+
+.vertical > li > a:hover{
+    text-decoration: underline;
+}
+
 
 .vertical > li > a > i {
     font-size: 30px;
@@ -133,4 +144,100 @@
 .iconFooter:hover { 
     color: #0ACCF3;
     transition: .2s;
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+
+    .sectionFooter {
+        margin: auto;
+    }
+
+    .logoFooter {
+        width: 16.25rem;
+    }
+
+    .logoText {
+        text-decoration: none;
+    }
+
+    .logoText > a:hover {
+        text-decoration: underline;
+    }
+
+
+    .titleFooter {
+        margin-bottom: 0.99rem;
+    }
+
+    .tags > li > button {
+        margin-bottom: 5px;
+        padding: 10px 12px;
+        font-size: 0.8125rem;
+        border-radius: 0.625rem;
+    }
+
+    .vertical > li > a > i {
+        font-size: 1.375rem;
+    }
+
+    .vertical > li > a {
+        font-size: 0.99rem;
+        text-decoration: none;
+    }
+
+    .vertical > li > a:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        padding: 3% 10%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .logoFooter {
+        width: 10rem;
+    }
+    
+    .logoText {
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .logoText > a:hover {
+        text-decoration: underline;
+    }
+
+
+    .titleFooter {
+        margin-bottom: 0.99rem;
+    }
+
+    .tags > li > button {
+        margin-bottom: 0;
+        padding: 10px 6px;
+        font-size: 0.62rem;
+        border-radius: 0.625rem;
+    }
+
+    .sectionFooter > ul {
+        gap: 10px
+    }
+
+    .vertical > li > a > i {
+        font-size: 1.3rem;
+    }
+
+    .vertical > li > a {
+        font-size: 0.99rem;
+        text-decoration: none;
+    }
+
+    .vertical > li > a:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        padding: 3% 10%;
+    }
 }
