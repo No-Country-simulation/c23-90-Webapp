@@ -7,11 +7,11 @@ const Navbar = () => {
     <nav className="navBar">
       <Link to="/"><img src='/logo.webp' alt="Logo" className="logo"/></Link>
       <ul>
-        <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/join">How to Join</Link></li>
-        <li><Link to="/costs">Costs</Link></li>
-        <li><Link to="/benefits">Benefits</Link></li>
-        <li><Link to="/contact">Contact Us</Link></li>
+        <li><Link to="/about" className="linkNav">About Us</Link></li>
+        <li><Link to="/join" className="linkNav">How to Join</Link></li>
+        <li><Link to="/costs" className="linkNav">Costs</Link></li>
+        <li><Link to="/benefits" className="linkNav">Benefits</Link></li>
+        <li><Link to="/contact" className="linkNav">Contact Us</Link></li>
       </ul>
       <div>
         <Link to="/sign" type="button" class="btn signUp">

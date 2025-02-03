@@ -3,7 +3,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  padding: 20px 10%;
+  padding: 0 10%;
   box-shadow: 0px 2px 5px 0px rgba(128,119,128,1);
   margin-bottom: 5px;
 }
@@ -16,7 +16,7 @@ ul {
   justify-content: space-between;
 }
   
-a {
+.linkNav {
   color: black;
   text-decoration: none;
   font-weight: bold;
@@ -24,7 +24,7 @@ a {
   margin: 0 10px;
 }
   
-a:hover {
+.linkNav:hover {
   text-decoration: underline;
 }
   
@@ -66,4 +66,61 @@ a:hover {
 
 .signUp:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+
+  nav {
+    padding: 2px 11%;
+  }
+
+  .logo {
+    width: 12.5rem;
+    height: 4.375rem;
+  }
+  
+  ul {
+    gap: 5px;
+  }
+
+
+  .linkNav {
+    font-size: 0.95rem;
+  }
+
+  .login {
+    font-size: 0.99rem;
+  }
+  
+  .signUp {
+    font-size: 0.99rem;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+  .logo {
+    width: 10rem;
+    height: 3rem;
+  }
+
+  .linkNav {
+    font-size: 0.72rem;
+  }
+
+  .login {
+    font-size: 0.6rem;
+  }
+  
+  .signUp {
+    font-size: 0.6rem;
+  }
+
+  .btn {
+    border-radius: 50px;
+    margin: 0 5px;
+    width: 100px;
+  }
+
 }
