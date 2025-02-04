@@ -1,0 +1,207 @@
+{
+    "countries": [
+      {
+        "country": "Colombia",
+        "volunteeringOptions": [
+          {
+            "category": "Farms",
+            "img" : "./farm-colombia.png",
+            "description": "Volunteer on an organic coffee farm in the Andes, helping with harvesting and planting.",
+            "language": "Spanish",
+            "minimumAge": 18,
+            "mealsIncluded": 3
+          },
+          {
+            "category": "Eco Villages",
+            "img": "./eco-village-colombia.png",
+            "description": "Join an eco-village project focused on permaculture and renewable energy in rural Colombia.",
+            "language": "English and Spanish",
+            "minimumAge": 20,
+            "mealsIncluded": 2
+          },
+          {
+            "category": "Hostels",
+            "img": "./Hostels-colombia.jpg",
+            "description": "Support a backpacker hostel in Cartagena by assisting with reception and event planning.",
+            "language": "English",
+            "minimumAge": 21,
+            "mealsIncluded": 1
+          }
+        ]
+      },
+      {
+        "country": "Argentina",
+        "volunteeringOptions": [
+          {
+            "category": "Farms",
+            "img": "./farm-argentina.png",
+            "description": "Help on a family farm in Mendoza, focusing on grape cultivation and wine production.",
+            "language": "Spanish",
+            "minimumAge": 18,
+            "mealsIncluded": 3
+          },
+          {
+            "category": "Sustainable Communities",
+            "img": "./Sustainable-Communities-argentina.png",
+            "description": "Collaborate with a community in Patagonia on projects involving renewable energy and conservation.",
+            "language": "English and Spanish",
+            "minimumAge": 20,
+            "mealsIncluded": 2
+          },
+          {
+            "category": "Camping Sites",
+            "img": "./camping-sites-argentina.jpg",
+            "description": "Volunteer at a camping site near Bariloche, assisting with maintenance and eco-tourism activities.",
+            "language": "Spanish",
+            "minimumAge": 18,
+            "mealsIncluded": 2
+          }
+        ]
+      },
+      {
+        "country": "Mexico",
+        "volunteeringOptions": [
+          {
+            "category": "Camping Sites",
+            "img": "./camping-sites-mexico.jpg",
+            "description": "Help maintain a coastal camping site while enjoying breathtaking ocean views.",
+            "language": "Spanish",
+            "minimumAge": 18,
+            "mealsIncluded": 2
+          },
+          {
+            "category": "Sustainable Communities",
+            "img": "./sustainable-communities-México.jpg",
+            "description": "Collaborate with a sustainable community in Chiapas to create eco-friendly housing.",
+            "language": "English and Spanish",
+            "minimumAge": 20,
+            "mealsIncluded": 3
+          },
+          {
+            "category": "Holistic Centers",
+            "img": "./holistic-center-Mexico.jpg",
+            "description": "Assist in yoga retreats and holistic practices at a center near Tulum.",
+            "language": "English",
+            "minimumAge": 25,
+            "mealsIncluded": 1
+          }
+        ]
+      },
+      {
+        "country": "Thailand",
+        "volunteeringOptions": [
+          {
+            "category": "Farms",
+            "img": "./farm-thailand.jpg",
+            "description": "Volunteer on a rice farm, learning traditional farming techniques in northern Thailand.",
+            "language": "Thai and English",
+            "minimumAge": 18,
+            "mealsIncluded": 3
+          },
+          {
+            "category": "Hostels",
+            "img": "./Hostels-Thailand.jpg",
+            "description": "Assist a boutique hostel in Bangkok with managing social media and guest services.",
+            "language": "English",
+            "minimumAge": 22,
+            "mealsIncluded": 1
+          },
+          {
+            "category": "Camping Sites",
+            "img": "./camping-sites-Thailand.jpg",
+            "description": "Help set up eco-friendly camping accommodations in a national park.",
+            "language": "English",
+            "minimumAge": 20,
+            "mealsIncluded": 2
+          }
+        ]
+      },
+      {
+        "country": "India",
+        "volunteeringOptions": [
+          {
+            "category": "Holistic Centers",
+            "img": "./holistic-center-india.jpg",
+            "description": "Join a meditation retreat in the Himalayas and help with daily logistics.",
+            "language": "English and Hindi",
+            "minimumAge": 21,
+            "mealsIncluded": 3
+          },
+          {
+            "category": "Eco Villages",
+            "img": "./eco-village-india.jpg",
+            "description": "Contribute to an eco-village project focused on organic farming and sustainable living.",
+            "language": "English",
+            "minimumAge": 18,
+            "mealsIncluded": 2
+          },
+          {
+            "category": "Sustainable Communities",
+            "img": "./sustainable-communities-India.png",
+            "description": "Work with a community in Rajasthan to promote water conservation and solar energy.",
+            "language": "English and Hindi",
+            "minimumAge": 22,
+            "mealsIncluded": 3
+          }
+        ]
+      },
+      {
+        "country": "Spain",
+        "volunteeringOptions": [
+          {
+            "category": "Farms",
+            "img": "./farm-spain.png",
+            "description": "Help with olive harvesting and gardening at a family-run farm in Andalucía.",
+            "language": "Spanish",
+            "minimumAge": 18,
+            "mealsIncluded": 3
+          },
+          {
+            "category": "Hostels",
+            "img": "./Hostel-spain.jpg",
+            "description": "Volunteer at a hostel in Barcelona, assisting with guest check-in and cultural events.",
+            "language": "English and Spanish",
+            "minimumAge": 21,
+            "mealsIncluded": 1
+          },
+          {
+            "category": "Camping Sites", 
+            "img": "./camping-sites-spain.jpg",
+            "description": "Maintain eco-friendly camping sites along the Camino de Santiago route.",
+            "language": "English and Spanish",
+            "minimumAge": 20,
+            "mealsIncluded": 2
+          }
+        ]
+      },
+      {
+        "country": "Australia",
+        "volunteeringOptions": [
+          {
+            "category": "Farms",
+            "img": "./farm-Australia.jpg",
+            "description": "Assist on a vineyard in the Barossa Valley, learning winemaking and grape harvesting.",
+            "language": "English",
+            "minimumAge": 18,
+            "mealsIncluded": 3
+          },
+          {
+            "category": "Camping Sites",
+            "img": "./camping-australia.jpg",
+            "description": "Help develop eco-tourism facilities in the Australian Outback.",
+            "language": "English",
+            "minimumAge": 20,
+            "mealsIncluded": 2
+          },
+          {
+            "category": "Holistic Centers",
+            "img": "./holistic-center-australia.jpg",
+            "description": "Support a wellness retreat in Byron Bay, assisting with yoga and mindfulness workshops.",
+            "language": "English",
+            "minimumAge": 21,
+            "mealsIncluded": 1
+          }
+        ]
+      }
+    ]
+  }

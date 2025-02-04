@@ -68,6 +68,14 @@ ul {
   text-decoration: underline;
 }
 
+
+@media (min-width: 1440px) and (max-width: 1980px) {
+  .linkNav {
+    font-size: 1.1rem;
+  }
+
+}
+
 @media (min-width: 1280px) and (max-width: 1440px) {
 
   nav {

@@ -137,6 +137,16 @@ video {
   font-weight: bold;
 }
 
+@media (min-width: 1440px) and (max-width: 1919px) {
+  video {
+    height: 80%;
+  }
+  
+  .header {
+    padding: 10vh 0;
+  }
+}
+
 @media (min-width: 1280px) and (max-width: 1440px) {
 
   video {
@@ -186,7 +196,10 @@ video {
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
-
+  video {
+    height: 70%;
+  }
+  
   .homeTitle {
     font-size: 4rem;
   }
