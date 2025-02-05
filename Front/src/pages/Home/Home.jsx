@@ -1,8 +1,22 @@
 import React from "react";
 import './Home.css';
 import CardExperiences from "../../components/Card/CardExperiences";
+import { Link } from "react-router-dom";
+import data from "../../api.json"
+import { useParams } from 'react-router-dom'
+
 
 const Home = () => {
+
+  const countryData = data.countries.map(c => c.country);
+
+  const volunteeringOptions = countryData.map((option, index) => (
+   
+    <li key={index}>
+      <Link to={`/country/${option.toLowerCase()}`} className="btn btnHome">{option}</Link>
+    </li>
+));
+ 
   return (
     <>
       <video src="https://videos.pexels.com/video-files/3209571/3209571-uhd_2560_1440_25fps.mp4" autoplay="true" muted="true" loop="true"></video>
@@ -14,23 +28,7 @@ const Home = () => {
           <input type="text" name="searcher" id="searcher" placeholder="Search" className="homeInput"/>
         </div>
         <ul className="buttons">
-          <li>
-            <button className="btn btnHome">ARGENTINA</button>
-          </li>
-          <li>
-            <button className="btn btnHome">MÉXICO</button>
-          </li>
-          <li>
-            <button className="btn btnHome">PERÚ</button>
-          </li>
-          <li>
-            <button className="btn btnHome">USA</button>
-          </li>
-          <li>
-            <button className="btn btnHome">CANADÁ</button></li>
-          <li>
-            <button className="btn btnHome">EUROPA</button>
-          </li>
+          {volunteeringOptions}
         </ul>
       </header>
       <main className="main">
