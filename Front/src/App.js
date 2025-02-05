@@ -14,6 +14,7 @@ import Costs from "./pages/Costs/Costs";
 import Paymentspremium from "./pages/Costs/Payments/Paymentspremium";
 import Paymentsstandard from "./pages/Costs/Payments/paymentsstandard";
 import VolunteerDetailPage from "./components/Hosts/VolunteerDetailPage";
+import Countries from "./components/Countries/Countries";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/paymentspremium" element={<Paymentspremium />} />
         <Route path="/terms" element={<TermsAndConditions />} />
         <Route path="/volunteer/:category" element={<VolunteerDetailPage />} />
+        <Route path="/country/:country" element={<Countries />} />
       </Routes>
       <Footer />
     </Router>
