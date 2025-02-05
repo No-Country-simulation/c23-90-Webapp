@@ -13,6 +13,7 @@ import HowToJoin from "./pages/HowToJoin/HowToJoin";
 import Costs from "./pages/Costs/Costs"; 
 import Paymentspremium from "./pages/Costs/Payments/Paymentspremium";
 import Paymentsstandard from "./pages/Costs/Payments/paymentsstandard";
+import VolunteerDetailPage from "./components/Hosts/VolunteerDetailPage";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/paymentsstandard" element={<Paymentsstandard />} />
         <Route path="/paymentspremium" element={<Paymentspremium />} />
         <Route path="/terms" element={<TermsAndConditions />} />
+        <Route path="/volunteer/:category" element={<VolunteerDetailPage />} />
       </Routes>
       <Footer />
     </Router>

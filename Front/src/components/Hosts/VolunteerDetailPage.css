@@ -1,0 +1,81 @@
+.volunteer-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .volunteer-detail h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .opportunities {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .opportunity-card {
+    width: 300px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+  
+  .opportunity-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .opportunity-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #34495e;
+  }
+  
+  .opportunity-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .info-box {
+    flex: 1;
+    background: #64d1ea;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .info-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .info-box p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .no-opportunities {
+    font-size: 1.2rem;
+    color: #d9534f;
+    font-weight: bold;
+  }
+  
