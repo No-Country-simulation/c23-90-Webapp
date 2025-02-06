@@ -21,7 +21,7 @@ video {
 .homeTitle {
   font-size: 6rem;
   color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 }
 
 .homeParagraph {
@@ -29,7 +29,7 @@ video {
   color: white;
   font-weight: 400;
   margin-bottom: 50px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 }
 
 .search {
@@ -64,17 +64,18 @@ video {
 }
 
 .btnHome {
-  border: 3px solid #17C5EC;
+  border: 1px solid #17c6ee;
+  background-color: rgba(23, 198, 238, 50%);
   color: white;
   width: 150px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 }
 
 .btnHome:hover {
   background-color: #17C5EC;
   color: white;
   scale: 1.1;
-  transition: .2s;
+  transition: .2s ease-in-out;
 }
 
 .subtitle {

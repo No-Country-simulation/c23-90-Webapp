@@ -42,8 +42,8 @@
 }
 
 .cardBody:hover {
-    scale: 1.1;
-    transition: .5s;
+    scale: 1.01;
+    transition: .3s;
 }
 
 .cardImg {

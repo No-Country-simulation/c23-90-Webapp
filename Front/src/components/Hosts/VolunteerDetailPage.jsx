@@ -82,7 +82,7 @@ const normalizeCategory = (category) => {
     return (
       <div className="volunteer-detail">
         <h1>Opportunities to volunteer in {category} around the world</h1>
-        <div className="content">
+        <div className="contentDetail">
           {opportunities.length > 0 ? (
             <div className="opportunities">
               {opportunities.map((item, index) => (
