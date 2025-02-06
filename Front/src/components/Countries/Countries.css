@@ -9,10 +9,10 @@
     grid-column: span 3;
 }
 .countriesFilter > :nth-child(2) {
-    grid-column: span 5;
+    grid-column: span 7;
 }
 .countriesFilter > :nth-child(3) {
-    grid-column: span 3;
+    grid-column: span 1;
 }
 
 .mainFilter {
