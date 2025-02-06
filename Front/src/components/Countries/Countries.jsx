@@ -98,7 +98,7 @@ const Countries = () => {
   return (
     <div className="countriesFilter">
         <aside className='filter'>
-            <h3 className='filterTitle'>Filtering by: </h3>
+            <h3 className='filterTitle'>Filtering by </h3>
             <h5 className='filterTitle'>Country: </h5>
             <button className="filterButton"><i class="bi bi-x-lg"></i></button>
         </aside>

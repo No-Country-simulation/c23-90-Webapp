@@ -12,7 +12,7 @@
     grid-column: span 7;
 }
 .countriesFilter > :nth-child(3) {
-    grid-column: span 1;
+    grid-column: span 2;
 }
 
 .mainFilter {
@@ -130,7 +130,7 @@
     flex-direction: column;
     background-color: grey;
     border-radius: 1.25rem;
-    height: 40vh;
+    height: auto;
     padding: 1.25rem;
 }
 
@@ -211,5 +211,243 @@
     color: #FFFFFFFF;
     font-weight: 600;
     font-size: .98rem;
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+    .filter {
+        width: 100%;
+        height: 10%;
+    }
+
+    .filterTitle {
+        font-size: 1.4rem;
+    }
+
+    .mainFilterTitle {
+        font-size: 2rem;
+    }
+
+    .imgContainer {
+        width: 14rem;
+        height: 10rem;
+    }
+    .join {
+        height: auto;
+        padding: .9rem;
+    }
+
+    .joinTitle {
+        font-size: .95rem;
+        color: #FFFFFFFF;
+        margin: 0.5rem 0;
+    }
+
+    .joinParagraph {
+        font-size: 0.9rem;
+    }
+
+    .joinButton {
+        font-size: .8rem;
+        width: 12vw;
+        margin: 5px auto;
+    }
+
+    .finalJoin {
+        margin: 5px 0;
+    }
+
+    .why {
+        padding: .9rem;
+    }
+
+    .whyTitle {
+        font-size: .99rem;
+    }
+
+    .whyOptionsItem {
+        font-size: .85rem;
+    }
+
+    .whyFinal {
+        font-size: .89rem;
+    }
+
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+    .filterTitle{
+        font-size: 1.2rem;
+    }
+
+    .filter {
+        position: relative;
+        background-color: #1DC0E6;
+        width: 16vw;
+        height: 20vh;
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .mainFilterTitle {
+        font-size: 1.8rem;
+    }
+
+    .imgContainer {
+        width: 13rem;
+        height: 9rem;
+    }
+
+    .join {
+        border-radius: 1rem;
+        height: auto;
+        width: 15vw;
+    }
+
+    .joinTitle {
+        font-size: .79rem;
+        margin: 1rem 0;
+    }
+
+    .joinParagraph {
+        font-weight: 500;
+        font-size: 0.7rem;
+        margin-bottom: 5px;
+        color: #FFFFFFFF;
+    }
+
+    .bolder{
+        font-size: .68rem;
+    }
+
+    .joinButton > a {
+        font-size: .7rem;
+    }    
+
+    .joinButton {
+        font-size: .9rem;
+        width: auto;
+        margin: .5rem auto;
+        padding: .2rem;
+    }
+
+    .why {
+        width: 15vw;
+    }
+
+    .whyTitle {
+        font-size: .8rem;
+        margin: .1rem;
+    }
+
+    .whyOptions {
+        margin: .2rem 0;
+    }
+
+    .whyOptionsItem {
+        font-size: .7rem;
+    }
+
+    .whyFinal {
+        color: #FFFFFFFF;
+        font-weight: 600;
+        font-size: .65rem;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .filter {
+        width: 16vw;
+        height: 16vh;
+        padding: 1rem .7rem;
+        border-radius: 25px;
+    }
+
+    .filterTitle {
+        font-size: 1.2rem;
+    }
+
+    .filterButton {
+         top: 50%;
+         right: 1rem;
+     }
+
+     .mainFilterTitle {
+        font-size: 1.2rem;
+    }
+
+    .imgContainer {
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .articleTitle {
+        margin: .4rem 0;
+    }
+
+    .articleParagraph {
+        font-size: 11px;
+    }
+
+    .language {
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    .dot {
+        font-size: 1.5rem;
+    }
+     
+    .join {
+        height: auto;
+        padding: .5rem;
+    }
+
+    .joinTitle {
+        font-size: .65rem;
+        margin: .5rem 0;
+    }
+
+    .joinParagraph {
+        font-weight: 500;
+        font-size: 0.5rem;
+    }
+
+    .bolder {
+        font-weight: 800;
+        font-size: .7rem;
+    }
+
+    .joinButton > a {
+        font-size: .5rem;
+    }
+    
+    .joinButton{
+        width: 8rem;
+        padding: 1px;
+        margin: auto;
+    }
+
+    .finalJoin {
+        margin: 5px 0;
+        font-size: .7rem;
+    }
+
+    .why {
+        padding:.9rem .5rem;
+    }
+
+    .whyTitle {
+        font-size: .7rem;
+    }
+
+    .whyOptionsItem {
+        font-size: .5rem;
+    }
+
+    .whyFinal {
+        font-size: .6rem;
+    }
+
 }
 
