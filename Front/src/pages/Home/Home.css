@@ -9,9 +9,8 @@
 
 video {
   position: absolute;
-  left: 0;
   top: 0;
-  height: 65%;
+  height: 70%;
   width: 100%;
   object-fit: cover;
   z-index: -1;
@@ -140,7 +139,7 @@ video {
 
 @media (min-width: 1440px) and (max-width: 1919px) {
   video {
-    height: 50%;
+    height: 60%;
   }
   
   .header {
@@ -160,7 +159,7 @@ video {
 
   video {
     position: absolute;
-    height: 52%;
+    height: 60%;
     width: 100%;
     object-fit: cover;
   }
@@ -206,7 +205,7 @@ video {
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   video {
-    height: 52%;
+    height: 60%;
   }
 
 
